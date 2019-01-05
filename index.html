@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic'>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+    <script type="text/javascript" src='js/table.js'></script>
+    <script type="text/javascript" src='js/leaflet.markercluster.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bonus NodeSchool stylesheet option! -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/nodeschool.css"> -->
+  </head>
+  <body>
+
+  <h1>CVIT Study Sesssions</h1>
+  <div id="calendar-goes-here"></div>
+  <small>Add events to this <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYD1HFa0Q2STRkl-I_L8wSE11C7gqPErh2XXwZqXbGhi2-x2WZcez8oUGak8BxMsbTSP29UCvBzfQg/pubhtml#gid=0&output=json" target="_blank">spreadsheet</a>. Visit the GitHub <a href="http://www.github.com/jlord/sheetsee-calendar">repository</a>.</small>
+
+  </body>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      var URL = "1NAgu8mOFPMLbxuSRsg72gNJyPIEKxJT6gAUOkHoHwWA"
+      Tabletop.init( { key: URL, callback: generateCalendar, simpleSheet: true } )
+    })
+  </script>
+</html>
